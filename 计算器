@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+  double a,b;
+  char c,d;
+  for(;c!='#';)
+  {
+     printf("请输入运算符以及数字\n");  
+     scanf("%c,%lf,%lf%c",&c,&a,&b,&d);
+     if(c!='#')
+     {
+        switch(c)
+        {
+          case '+':printf("%.2lf+%.2lf=%.2lf\n",a,b,a+b);break;
+          case '-':printf("%.2lf-%.2lf=%.2lf\n",a,b,a-b);break;
+          case '*':printf("%.2lf*%.2lf=%.2lf\n",a,b,a*b);break;
+          case '/':printf("%.2lf/%.2lf=%.2lf\n",a,b,a/b);break;
+        }
+     }
+	 else
+	 {
+		 break;
+	 }
+  }
+  printf("结束\n");
+  return 0;
+}
